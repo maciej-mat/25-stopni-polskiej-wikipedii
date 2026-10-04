@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta id="page-description" name="description" content="25 bezpośrednich linków przez 26 biografii polskojęzycznej Wikipedii, od 2001 do 2026 roku.">
+    <title>25 stopni polskiej Wikipedii</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/site.css">
+  </head>
+  <body>
+    <main class="page">
+      <header class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow" data-i18n="heroEyebrow">WIKIPEDIA 25 · PODRÓŻ PO LINKACH</p>
+          <h1 data-i18n="heroTitle">25 stopni polskiej Wikipedii</h1>
+          <p class="lede" data-i18n="heroLede">25 bezpośrednich linków prowadzi przez 26 biografii polskojęzycznej Wikipedii — od Marii Skłodowskiej-Curie do Igora Červeného. Kolejne artykuły powstały w latach 2001–2026. Dziękujemy wszystkim redaktorkom i redaktorom.</p>
+        </div>
+
+        <div class="header-tools">
+          <button id="language-toggle" class="language-toggle" type="button" aria-pressed="false" aria-label="Przełącz na język angielski">EN</button>
+          <a class="wmp-logo" href="https://commons.wikimedia.org/wiki/File:Wikimedia_Polska_logo.svg" target="_blank" rel="noopener noreferrer" aria-label="Logo Wikimedia Polska">
+            <img src="assets/wikimedia-polska-logo.svg" alt="Wikimedia Polska">
+          </a>
+          <a class="logo-panel" href="https://meta.wikimedia.org/wiki/Wikipedia_25/Celebration_toolkit" target="_blank" rel="noopener noreferrer" aria-label="Wikipedia 25 Celebration Toolkit">
+            <img src="assets/short-lockup-knockout.png" alt="Wikipedia 25">
+          </a>
+        </div>
+      </header>
+
+      <section class="summary" data-i18n-aria-label="summaryAria" aria-label="Najważniejsze dane trasy">
+        <div class="summary-item">
+          <strong class="summary-value" id="summary-biographies">26</strong>
+          <span class="summary-label" data-i18n="summaryBiographies">biografii</span>
+        </div>
+        <div class="summary-item">
+          <strong class="summary-value" id="summary-links">25</strong>
+          <span class="summary-label" data-i18n="summaryLinks">bezpośrednich linków</span>
+        </div>
+        <div class="summary-item">
+          <strong class="summary-value" id="summary-views">12,1 mln</strong>
+          <span class="summary-label" data-i18n="summaryViews">odsłon w latach 2016–2026</span>
+        </div>
+        <div class="summary-item">
+          <strong class="summary-value" id="summary-years">2001–2026</strong>
+          <span class="summary-label" data-i18n="summaryYears">lata utworzenia artykułów</span>
+        </div>
+      </section>
+
+      <section class="intro" aria-labelledby="how-it-works-title">
+        <div>
+          <h2 id="how-it-works-title" data-i18n="howTitle">Jak czytać tę trasę?</h2>
+          <p data-i18n="howCopy">Każdy puzzel oznacza artykuł biograficzny. Przejście do kolejnego puzzla znaczy, że aktualna wersja poprzedniego artykułu zawiera bezpośredni link do następnego. Kliknij dowolną osobę, aby zobaczyć jej kartę danych.</p>
+        </div>
+        <p class="method-note" data-i18n="methodCopy">Tytuł nawiązuje do idei „Six degrees of Wikipedia”, lecz nie pokazuje najkrótszej możliwej drogi. To celowo zbudowany łańcuch 25 linków, w którym kolejne biografie pochodzą z kolejnych lat polskiej Wikipedii.</p>
+      </section>
+
+      <section class="route-layout" aria-labelledby="route-title">
+        <div class="route-panel">
+          <p class="route-kicker" data-i18n="routeKicker">INTERAKTYWNA TRASA</p>
+          <h2 class="route-title" id="route-title" data-i18n="routeTitle">Wybierz puzzel</h2>
+          <p class="route-note" data-i18n="routeNote">Wszystkie puzzle mają tę samą skalę i orientację, dzięki czemu ich wypusty i wcięcia łączą się w jedną trasę. Możesz użyć także klawisza Tab oraz Entera lub Spacji.</p>
+          <p id="route-status" class="sr-only" aria-live="polite"></p>
+          <div id="route-map" class="route-map" role="group" data-i18n-aria-label="routeMapAria" aria-label="Łańcuch 26 biografii"></div>
+        </div>
+
+        <aside id="detail-card" class="detail-card" aria-labelledby="detail-title">
+          <div class="detail-heading">
+            <h2 id="detail-title" data-i18n="loading">Wczytywanie danych…</h2>
+          </div>
+
+          <ul class="kpi-list">
+            <li class="kpi">
+              <img src="assets/w25-eye.png" alt="">
+              <span><strong id="detail-views">—</strong><span data-i18n="detailViewsLabel">odsłon w latach 2016–2026</span></span>
+            </li>
+            <li class="kpi">
+              <img src="assets/w25-globe.png" alt="">
+              <span><strong id="detail-created">—</strong><span data-i18n="detailCreatedLabel">data utworzenia artykułu</span></span>
+            </li>
+            <li class="kpi">
+              <img src="assets/w25-pencil.png" alt="">
+              <span><strong id="detail-edits">—</strong><span id="detail-edits-label" data-i18n="detailEditsLabel">publicznie dostępne rewizje</span></span>
+            </li>
+          </ul>
+
+          <p id="detail-next" class="next-link"></p>
+          <a id="detail-link" class="button-link" href="#" target="_blank" rel="noopener noreferrer" data-i18n="openArticle">Otwórz artykuł w Wikipedii ↗</a>
+          <p id="detail-photo-credit" class="photo-credit"></p>
+        </aside>
+      </section>
+
+      <footer class="footer">
+        <p>
+          <strong data-i18n="footerSources">Źródła danych:</strong>
+          <a href="https://github.com/bi-ngo-wolontariat/BI_NGO-2026-Wikimedia-Polska" target="_blank" rel="noopener noreferrer" data-i18n="sourceRepo">#BI_NGO — zbiory 9 i 10</a>;
+          <a href="https://pl.wikipedia.org/w/api.php" target="_blank" rel="noopener noreferrer" data-i18n="sourceApi">API polskiej Wikipedii</a>.
+          <span data-i18n="footerViews">Odsłony obejmują okres 2016-01–2026-06.</span>
+        </p>
+        <p data-i18n="footerCaveat">Łańcuch został sprawdzony na aktualnych wersjach artykułów. Linki w Wikipedii mogą się zmieniać, dlatego wynik opisuje stan zweryfikowany 4 października 2026 r.</p>
+        <p>
+          <span data-i18n="footerLicences">Licencje danych: zestaw 10 — CC0 1.0; zestaw 9 — Wikidata CC0 1.0 i polska Wikipedia CC BY-SA 4.0.</span>
+          <a href="https://github.com/bi-ngo-wolontariat/BI_NGO-2026-Wikimedia-Polska/blob/main/dictionary.md#źródła-danych-i-licencje" target="_blank" rel="noopener noreferrer" data-i18n="dataDictionary">Słownik danych i licencje</a>.
+        </p>
+        <details>
+          <summary data-i18n="photoCredits">Atrybucje zdjęć</summary>
+          <ul id="photo-credits-list"></ul>
+        </details>
+        <p>
+          <span data-i18n="footerGraphics">Elementy graficzne:</span>
+          <a href="https://meta.wikimedia.org/wiki/Wikipedia_25/Celebration_toolkit" target="_blank" rel="noopener noreferrer">Wikipedia 25 Celebration Toolkit</a> ·
+          <a href="https://commons.wikimedia.org/wiki/File:Wikimedia_Polska_logo.svg" target="_blank" rel="noopener noreferrer" data-i18n="sourceWmplLogo">logo Wikimedia Polska</a>
+          <span data-i18n="wmplAttribution">(Holek, Leinad i Wikimedia Foundation; CC BY-SA 3.0).</span>
+        </p>
+        <p data-i18n="footerProject">Projekt przygotowany na Wolontariat #BI_NGO – III edycja.</p>
+      </footer>
+    </main>
+
+    <noscript>
+      <p class="load-error">Do wyświetlenia interaktywnej trasy potrzebny jest JavaScript.</p>
+    </noscript>
+    <script src="assets/app.js" defer></script>
+  </body>
+</html>

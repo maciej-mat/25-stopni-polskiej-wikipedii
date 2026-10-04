@@ -1,0 +1,4 @@
+# Odtwarzalny lokalnie cache API nie jest częścią publikacji.
+data_cache/
+__pycache__/
+*.py[cod]

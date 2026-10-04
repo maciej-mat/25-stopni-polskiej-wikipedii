@@ -1,0 +1,245 @@
+{
+  "metadata": {
+    "path_number": 9,
+    "first_month": "2016-01",
+    "last_month": "2026-06",
+    "months": 126
+  },
+  "path_total_views": 12102614,
+  "articles": [
+    {
+      "page_id": 3544,
+      "name": "Maria Skłodowska-Curie",
+      "title": "Maria_Skłodowska-Curie",
+      "year": 2001,
+      "created_date": "2001-11-08",
+      "total_views": 6116613,
+      "months_with_record": 126
+    },
+    {
+      "page_id": 126,
+      "name": "Albert Einstein",
+      "title": "Albert_Einstein",
+      "year": 2002,
+      "created_date": "2002-06-05",
+      "total_views": 3425363,
+      "months_with_record": 126
+    },
+    {
+      "page_id": 9782,
+      "name": "Martin Luther King",
+      "title": "Martin_Luther_King",
+      "year": 2003,
+      "created_date": "2003-01-01",
+      "total_views": 1191614,
+      "months_with_record": 126
+    },
+    {
+      "page_id": 35572,
+      "name": "Jurij Andropow",
+      "title": "Jurij_Andropow",
+      "year": 2004,
+      "created_date": "2004-01-19",
+      "total_views": 591165,
+      "months_with_record": 126
+    },
+    {
+      "page_id": 124595,
+      "name": "Henry Kissinger",
+      "title": "Henry_Kissinger",
+      "year": 2005,
+      "created_date": "2005-02-03",
+      "total_views": 607534,
+      "months_with_record": 126
+    },
+    {
+      "page_id": 391541,
+      "name": "Carl von Ossietzky",
+      "title": "Carl_von_Ossietzky",
+      "year": 2006,
+      "created_date": "2006-01-21",
+      "total_views": 55542,
+      "months_with_record": 126
+    },
+    {
+      "page_id": 1025181,
+      "name": "Arthur Henderson",
+      "title": "Arthur_Henderson",
+      "year": 2007,
+      "created_date": "2007-07-25",
+      "total_views": 6265,
+      "months_with_record": 126
+    },
+    {
+      "page_id": 1249890,
+      "name": "Leon Brittan",
+      "title": "Leon_Brittan",
+      "year": 2008,
+      "created_date": "2008-02-23",
+      "total_views": 2391,
+      "months_with_record": 126
+    },
+    {
+      "page_id": 1652687,
+      "name": "Emma Bonino",
+      "title": "Emma_Bonino",
+      "year": 2009,
+      "created_date": "2009-04-03",
+      "total_views": 12677,
+      "months_with_record": 126
+    },
+    {
+      "page_id": 1943105,
+      "name": "Francesco Guicciardini",
+      "title": "Francesco_Guicciardini",
+      "year": 2010,
+      "created_date": "2010-04-03",
+      "total_views": 6281,
+      "months_with_record": 126
+    },
+    {
+      "page_id": 2229588,
+      "name": "Pietro Nenni",
+      "title": "Pietro_Nenni",
+      "year": 2011,
+      "created_date": "2011-02-09",
+      "total_views": 4843,
+      "months_with_record": 126
+    },
+    {
+      "page_id": 2775259,
+      "name": "Enzo Moavero Milanesi",
+      "title": "Enzo_Moavero_Milanesi",
+      "year": 2012,
+      "created_date": "2012-09-09",
+      "total_views": 2473,
+      "months_with_record": 125
+    },
+    {
+      "page_id": 2959255,
+      "name": "Margaretha af Ugglas",
+      "title": "Margaretha_af_Ugglas",
+      "year": 2013,
+      "created_date": "2013-06-03",
+      "total_views": 1042,
+      "months_with_record": 125
+    },
+    {
+      "page_id": 3329140,
+      "name": "Lena Hjelm-Wallén",
+      "title": "Lena_Hjelm-Wallén",
+      "year": 2014,
+      "created_date": "2014-12-25",
+      "total_views": 643,
+      "months_with_record": 121
+    },
+    {
+      "page_id": 3505160,
+      "name": "Ylva Johansson",
+      "title": "Ylva_Johansson",
+      "year": 2015,
+      "created_date": "2015-07-04",
+      "total_views": 17101,
+      "months_with_record": 125
+    },
+    {
+      "page_id": 3687018,
+      "name": "Nicolas Schmit",
+      "title": "Nicolas_Schmit",
+      "year": 2016,
+      "created_date": "2016-04-24",
+      "total_views": 4262,
+      "months_with_record": 123
+    },
+    {
+      "page_id": 4102045,
+      "name": "Wopke Hoekstra",
+      "title": "Wopke_Hoekstra",
+      "year": 2017,
+      "created_date": "2017-10-23",
+      "total_views": 7879,
+      "months_with_record": 105
+    },
+    {
+      "page_id": 4303790,
+      "name": "Teresa Ribera",
+      "title": "Teresa_Ribera",
+      "year": 2018,
+      "created_date": "2018-06-06",
+      "total_views": 5935,
+      "months_with_record": 97
+    },
+    {
+      "page_id": 4498167,
+      "name": "Stéphane Séjourné",
+      "title": "Stéphane_Séjourné",
+      "year": 2019,
+      "created_date": "2019-03-25",
+      "total_views": 36683,
+      "months_with_record": 88
+    },
+    {
+      "page_id": 4699436,
+      "name": "Michael McGrath",
+      "title": "Michael_McGrath",
+      "year": 2020,
+      "created_date": "2020-01-19",
+      "total_views": 2407,
+      "months_with_record": 70
+    },
+    {
+      "page_id": 5189271,
+      "name": "Jozef Síkela",
+      "title": "Jozef_Síkela",
+      "year": 2021,
+      "created_date": "2021-12-05",
+      "total_views": 1949,
+      "months_with_record": 55
+    },
+    {
+      "page_id": 5207920,
+      "name": "Zdeněk Nekula",
+      "title": "Zdeněk_Nekula",
+      "year": 2022,
+      "created_date": "2022-01-03",
+      "total_views": 626,
+      "months_with_record": 54
+    },
+    {
+      "page_id": 5438569,
+      "name": "Petr Hladík",
+      "title": "Petr_Hladík",
+      "year": 2023,
+      "created_date": "2023-03-10",
+      "total_views": 443,
+      "months_with_record": 40
+    },
+    {
+      "page_id": 5644088,
+      "name": "Petr Kulhánek",
+      "title": "Petr_Kulhánek",
+      "year": 2024,
+      "created_date": "2024-04-12",
+      "total_views": 412,
+      "months_with_record": 27
+    },
+    {
+      "page_id": 5992541,
+      "name": "Zuzana Mrázová",
+      "title": "Zuzana_Mrázová",
+      "year": 2025,
+      "created_date": "2025-11-26",
+      "total_views": 266,
+      "months_with_record": 8
+    },
+    {
+      "page_id": 6043021,
+      "name": "Igor Červený",
+      "title": "Igor_Červený",
+      "year": 2026,
+      "created_date": "2026-03-02",
+      "total_views": 205,
+      "months_with_record": 4
+    }
+  ]
+}
