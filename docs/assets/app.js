@@ -27,14 +27,13 @@ const COPY = {
     languageToggleLabel: "Przełącz na język angielski",
     summaryAria: "Najważniejsze dane trasy",
     summaryBiographies: "biografii",
-    summaryLinks: "bezpośrednich linków",
     summaryViews: "odsłon w latach 2016–2026",
     summaryYears: "lata utworzenia artykułów",
     howTitle: "Jak czytać tę trasę?",
     howCopy: "Każdy puzzel oznacza artykuł biograficzny. Przejście do kolejnego puzzla znaczy, że aktualna wersja poprzedniego artykułu zawiera bezpośredni link do następnego. Kliknij dowolną osobę, aby zobaczyć jej kartę danych.",
-    methodCopy: "Tytuł nawiązuje do idei „Six degrees of Wikipedia”, lecz nie pokazuje najkrótszej możliwej drogi. To celowo zbudowany łańcuch 25 linków, w którym kolejne biografie pochodzą z kolejnych lat polskiej Wikipedii.",
+    methodCopy: "Tytuł nawiązuje do idei „Six degrees of Wikipedia”, lecz zamiast szukać najkrótszej możliwej drogi, szukamy połączeń między artykułami utworzonymi w Wikipedii na przestrzeni lat. Dzięki temu można dostrzec, jak wiele połączeń powstaje między pozornie niezwiązanymi osobami czy tematami.",
     routeKicker: "INTERAKTYWNA TRASA",
-    routeTitle: "Wybierz puzzel",
+    routeSectionAria: "Interaktywna trasa biografii",
     routeNote: "Wszystkie puzzle mają tę samą skalę i orientację, dzięki czemu ich wypusty i wcięcia łączą się w jedną trasę. Możesz użyć także klawisza Tab oraz Entera lub Spacji.",
     routeMapAria: "Łańcuch 26 biografii",
     loading: "Wczytywanie danych…",
@@ -63,6 +62,8 @@ const COPY = {
     sourceWmplLogo: "logo Wikimedia Polska",
     wmplAttribution: "(Holek, Leinad i Wikimedia Foundation; CC BY-SA 3.0).",
     footerProject: "Projekt przygotowany na Wolontariat #BI_NGO – III edycja.",
+    aiCreditBefore: "Projekt powstał przy wsparciu ",
+    aiCreditAfter: " w pracach technicznych i redakcji kodu.",
     loadError: "Nie udało się wczytać danych strony. Przy podglądzie lokalnym uruchom prosty serwer HTTP, np. python -m http.server 8000 w katalogu docs."
   },
   en: {
@@ -75,14 +76,13 @@ const COPY = {
     languageToggleLabel: "Switch to Polish",
     summaryAria: "Key route figures",
     summaryBiographies: "biographies",
-    summaryLinks: "direct links",
     summaryViews: "pageviews, 2016–2026",
     summaryYears: "article creation years",
     howTitle: "How to read this route",
     howCopy: "Each puzzle represents a biographical article. Moving to the next puzzle means that the current version of the previous article contains a direct link to the next one. Select any person to see their data card.",
-    methodCopy: "The title alludes to the idea of “Six degrees of Wikipedia”, but this is not the shortest possible route. It is a deliberately constructed chain of 25 links, in which successive biographies were created in successive years of the Polish Wikipedia.",
+    methodCopy: "The title alludes to the idea of “Six degrees of Wikipedia”, but instead of searching for the shortest possible route, we trace connections between articles created in different years of Wikipedia’s history. This reveals how many links can emerge between people and topics that may at first seem unrelated.",
     routeKicker: "INTERACTIVE ROUTE",
-    routeTitle: "Choose a puzzle",
+    routeSectionAria: "Interactive biography route",
     routeNote: "All puzzles share the same scale and orientation, so their notches and blanks form one route. You can also use Tab, Enter and Space.",
     routeMapAria: "A chain of 26 biographies",
     loading: "Loading data…",
@@ -111,6 +111,8 @@ const COPY = {
     sourceWmplLogo: "Wikimedia Polska logo",
     wmplAttribution: "(Holek, Leinad and Wikimedia Foundation; CC BY-SA 3.0).",
     footerProject: "Prepared for #BI_NGO Volunteering — 3rd edition.",
+    aiCreditBefore: "This project was created with support from ",
+    aiCreditAfter: " for technical work and code editing.",
     loadError: "The site data could not be loaded. For a local preview, run a simple HTTP server, for example python -m http.server 8000 in the docs folder."
   }
 };
@@ -322,7 +324,6 @@ function selectArticle(pageId, announce = true) {
 
 function renderSummary(metadata) {
   document.querySelector("#summary-biographies").textContent = metadata.article_count;
-  document.querySelector("#summary-links").textContent = metadata.direct_links_count;
   document.querySelector("#summary-views").textContent = formatCompactNumber(metadata.path_total_views);
   document.querySelector("#summary-years").textContent = `${metadata.first_article_year}–${metadata.last_article_year}`;
 }

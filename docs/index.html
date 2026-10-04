@@ -16,7 +16,23 @@
         <div class="hero-copy">
           <p class="eyebrow" data-i18n="heroEyebrow">WIKIPEDIA 25 · PODRÓŻ PO LINKACH</p>
           <h1 data-i18n="heroTitle">25 stopni polskiej Wikipedii</h1>
-          <p class="lede" data-i18n="heroLede">25 bezpośrednich linków prowadzi przez 26 biografii polskojęzycznej Wikipedii — od Marii Skłodowskiej-Curie do Igora Červeného. Kolejne artykuły powstały w latach 2001–2026. Dziękujemy wszystkim redaktorkom i redaktorom.</p>
+          <div class="hero-details">
+            <p class="lede" data-i18n="heroLede">25 bezpośrednich linków prowadzi przez 26 biografii polskojęzycznej Wikipedii — od Marii Skłodowskiej-Curie do Igora Červeného. Kolejne artykuły powstały w latach 2001–2026. Dziękujemy wszystkim redaktorkom i redaktorom.</p>
+            <section class="summary" data-i18n-aria-label="summaryAria" aria-label="Najważniejsze dane trasy">
+              <div class="summary-item">
+                <strong class="summary-value" id="summary-biographies">26</strong>
+                <span class="summary-label" data-i18n="summaryBiographies">biografii</span>
+              </div>
+              <div class="summary-item">
+                <strong class="summary-value" id="summary-views">12,1 mln</strong>
+                <span class="summary-label" data-i18n="summaryViews">odsłon w latach 2016–2026</span>
+              </div>
+              <div class="summary-item">
+                <strong class="summary-value" id="summary-years">2001–2026</strong>
+                <span class="summary-label" data-i18n="summaryYears">lata utworzenia artykułów</span>
+              </div>
+            </section>
+          </div>
         </div>
 
         <div class="header-tools">
@@ -30,25 +46,6 @@
         </div>
       </header>
 
-      <section class="summary" data-i18n-aria-label="summaryAria" aria-label="Najważniejsze dane trasy">
-        <div class="summary-item">
-          <strong class="summary-value" id="summary-biographies">26</strong>
-          <span class="summary-label" data-i18n="summaryBiographies">biografii</span>
-        </div>
-        <div class="summary-item">
-          <strong class="summary-value" id="summary-links">25</strong>
-          <span class="summary-label" data-i18n="summaryLinks">bezpośrednich linków</span>
-        </div>
-        <div class="summary-item">
-          <strong class="summary-value" id="summary-views">12,1 mln</strong>
-          <span class="summary-label" data-i18n="summaryViews">odsłon w latach 2016–2026</span>
-        </div>
-        <div class="summary-item">
-          <strong class="summary-value" id="summary-years">2001–2026</strong>
-          <span class="summary-label" data-i18n="summaryYears">lata utworzenia artykułów</span>
-        </div>
-      </section>
-
       <section class="intro" aria-labelledby="how-it-works-title">
         <div>
           <h2 id="how-it-works-title" data-i18n="howTitle">Jak czytać tę trasę?</h2>
@@ -57,10 +54,9 @@
         <p class="method-note" data-i18n="methodCopy">Tytuł nawiązuje do idei „Six degrees of Wikipedia”, lecz nie pokazuje najkrótszej możliwej drogi. To celowo zbudowany łańcuch 25 linków, w którym kolejne biografie pochodzą z kolejnych lat polskiej Wikipedii.</p>
       </section>
 
-      <section class="route-layout" aria-labelledby="route-title">
+      <section class="route-layout" data-i18n-aria-label="routeSectionAria" aria-label="Interaktywna trasa biografii">
         <div class="route-panel">
           <p class="route-kicker" data-i18n="routeKicker">INTERAKTYWNA TRASA</p>
-          <h2 class="route-title" id="route-title" data-i18n="routeTitle">Wybierz puzzel</h2>
           <p class="route-note" data-i18n="routeNote">Wszystkie puzzle mają tę samą skalę i orientację, dzięki czemu ich wypusty i wcięcia łączą się w jedną trasę. Możesz użyć także klawisza Tab oraz Entera lub Spacji.</p>
           <p id="route-status" class="sr-only" aria-live="polite"></p>
           <div id="route-map" class="route-map" role="group" data-i18n-aria-label="routeMapAria" aria-label="Łańcuch 26 biografii"></div>
@@ -115,6 +111,7 @@
           <span data-i18n="wmplAttribution">(Holek, Leinad i Wikimedia Foundation; CC BY-SA 3.0).</span>
         </p>
         <p data-i18n="footerProject">Projekt przygotowany na Wolontariat #BI_NGO – III edycja.</p>
+        <p><span data-i18n="aiCreditBefore">Projekt powstał przy wsparciu </span><a href="https://openai.com/codex/" target="_blank" rel="noopener noreferrer">Codex (OpenAI)</a><span data-i18n="aiCreditAfter"> w pracach technicznych i redakcji kodu.</span></p>
       </footer>
     </main>
 
