@@ -3,6 +3,7 @@
 const HORIZONTAL_STEP = 19.0393317;
 // 2188 px / 20244 px — pionowy krok oficjalnego puzzla w pełnym płótnie trasy.
 const VERTICAL_STEP = 10.8081407;
+const PUZZLE_HEIGHT = 13.5348745;
 
 const ROUTE_POSITIONS = [
   [0, 0], [1, 0], [2, 0], [3, 0], [4, 0],
@@ -14,6 +15,13 @@ const ROUTE_POSITIONS = [
   [4, 6], [3, 6], [2, 6], [1, 6], [0, 6],
   [0, 7],
   [0, 8], [1, 8]
+];
+
+const TIMELINE_MARKERS = [
+  { routeIndex: 0, label: "2001 →", placement: "above" },
+  { routeIndex: 6, label: "← 2007", placement: "below" },
+  { routeIndex: 12, label: "2013 →", placement: "below" },
+  { routeIndex: 18, label: "← 2019", placement: "below" }
 ];
 
 const COPY = {
@@ -34,7 +42,6 @@ const COPY = {
     methodCopy: "Tytuł nawiązuje do idei „Six degrees of Wikipedia”, lecz zamiast szukać najkrótszej możliwej drogi, szukamy połączeń między artykułami utworzonymi w Wikipedii na przestrzeni lat. Dzięki temu można dostrzec, jak wiele połączeń powstaje między pozornie niezwiązanymi osobami czy tematami.",
     routeKicker: "INTERAKTYWNA TRASA",
     routeSectionAria: "Interaktywna trasa biografii",
-    routeNote: "Wszystkie puzzle mają tę samą skalę i orientację, dzięki czemu ich wypusty i wcięcia łączą się w jedną trasę. Możesz użyć także klawisza Tab oraz Entera lub Spacji.",
     routeMapAria: "Łańcuch 26 biografii",
     loading: "Wczytywanie danych…",
     noData: "brak danych",
@@ -83,7 +90,6 @@ const COPY = {
     methodCopy: "The title alludes to the idea of “Six degrees of Wikipedia”, but instead of searching for the shortest possible route, we trace connections between articles created in different years of Wikipedia’s history. This reveals how many links can emerge between people and topics that may at first seem unrelated.",
     routeKicker: "INTERACTIVE ROUTE",
     routeSectionAria: "Interactive biography route",
-    routeNote: "All puzzles share the same scale and orientation, so their notches and blanks form one route. You can also use Tab, Enter and Space.",
     routeMapAria: "A chain of 26 biographies",
     loading: "Loading data…",
     noData: "no data",
@@ -247,6 +253,17 @@ function renderRoute() {
     button.append(shape, content);
     button.addEventListener("click", () => selectArticle(article.page_id));
     fragment.append(button);
+  });
+
+  TIMELINE_MARKERS.forEach((markerData) => {
+    const [column, row] = ROUTE_POSITIONS[markerData.routeIndex];
+    const marker = document.createElement("span");
+    marker.className = `timeline-marker is-${markerData.placement}`;
+    marker.setAttribute("aria-hidden", "true");
+    marker.textContent = markerData.label;
+    marker.style.left = `${column * HORIZONTAL_STEP}%`;
+    marker.style.top = `${row * VERTICAL_STEP + (markerData.placement === "below" ? PUZZLE_HEIGHT : 0)}%`;
+    fragment.append(marker);
   });
 
   mapElement.replaceChildren(fragment);

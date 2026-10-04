@@ -77,7 +77,6 @@ a { color: var(--blue); }
 .eyebrow,
 .summary,
 .route-kicker,
-.route-note,
 .detail-card,
 .footer,
 .button-link,
@@ -184,27 +183,39 @@ h1 {
 }
 
 .route-kicker {
-  margin: 0 0 8px;
+  margin: 0;
   color: var(--blue);
   font-size: 0.72rem;
   font-weight: 800;
   letter-spacing: 0.1em;
 }
 
-.route-note {
-  margin: 0 0 24px;
-  color: var(--body);
-  font-size: 0.82rem;
-  line-height: 1.45;
-}
-
 /* Geometria zachowuje krok 2188 px oficjalnego puzzla o szerokości 2740 px. */
 .route-map {
   position: relative;
   width: min(100%, 790px);
-  margin: 0 auto;
+  margin: 24px auto 0;
   aspect-ratio: 2873 / 5061;
 }
+
+.timeline-marker {
+  position: absolute;
+  z-index: 2;
+  width: 23.8426732%;
+  color: #72777d;
+  font-family: Montserrat, Arial, sans-serif;
+  font-size: clamp(0.58rem, 1.25vw, 0.74rem);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  line-height: 1;
+  pointer-events: none;
+  text-align: center;
+  white-space: nowrap;
+  transform: translateX(-10.073%);
+}
+
+.timeline-marker.is-above { transform: translate(-10.073%, calc(-100% - 5px)); }
+.timeline-marker.is-below { margin-top: 6px; }
 
 .puzzle {
   position: absolute;
